@@ -4,11 +4,13 @@ import Products from "./pages/Products"
 import Customers from "./pages/Customers";
 import Transaction from "./pages/Transaction";
 import { Suspense } from "react";
-// import { Navbar } from "./components/Navbar";
+import Navbar from "./components/Navbar";
+
 
 const App = () => {
   return (
     <BrowserRouter >
+    <Navbar />
     <Suspense fallback={"Loading...."}>
     <Routes>
       <Route path="/admin/dashboard" element={<Dashboard /> } />
